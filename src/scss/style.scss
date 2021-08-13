@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.container{
+    display: flex;
+    padding: 50px;
+
+}
+
+.albums{
+    width: 30%;
+    padding-right: 50px;
+
+    &__item{
+        margin-left: 30px;
+        font-size: 14px;
+        font-style: italic;
+        padding: 2px;
+        cursor: pointer;
+        &:hover{
+            color: red;
+        }
+    }
+}
+
+.photos{
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: coral;
+    border-radius: 5px;
+    box-shadow: 8px 5px 5px red;
+    padding: 0 50px;
+    &__item{
+        margin: 10px;
+        width: 150px;
+        height: 150px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.active{
+    color: coral;
+}
